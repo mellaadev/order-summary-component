@@ -1,0 +1,174 @@
+html
+{ 
+    font-size: 62.5%;
+    box-sizing: border-box; 
+}
+
+*, *:before, *:after
+{ 
+box-sizing: inherit;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0 auto;
+    background-image: url(../img/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: top center;
+    background-color: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.6rem;
+}
+
+img
+{
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+    body
+    {
+        background-image: url(../img/pattern-background-desktop.svg);
+    }
+}
+
+.content
+{
+    width: 450px;
+    height: auto;
+    background-color: #FFF;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 20px 30px -20px hsl(245 75% 52% / 0.2);
+    overflow: hidden;
+}
+
+@media (max-width: 1440px) {
+    .content
+    {
+        width: 350px;
+    }
+}
+
+.content .header img
+{
+    width: 450px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.content .body
+{
+    padding: 5rem 0;
+}
+
+
+.content .body h2
+{
+    font-size: 3rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    margin: 0;
+}
+
+.content .body p
+{
+    color: hsl(224, 23%, 55%);
+    margin: 2rem 0 0 0;
+}
+
+.content .body p span
+{
+    display: block;
+}
+
+.content .body .plan 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 2rem;
+    max-width: 80%;
+    border-radius: 1rem;
+    margin: 4rem auto 0 auto;
+}
+
+.content .body .plan .infoplan
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.content .body .plan .infoplan p
+{
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.7rem;
+}
+
+.content .body .plan .infoplan p:nth-child(1)
+{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.content .body .plan p.change
+{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.content .body .plan p.change:hover
+{
+    cursor: pointer;
+}
+
+
+.content .body .plan img
+{
+    width: 4rem;
+    height: 4rem;
+    margin: 0;
+}
+
+.content .body .boton
+{
+    margin-top: 4rem;
+    width: 80%;
+    padding: 2rem ;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background-color: hsl(245, 75%, 52%);
+    color: #FFF;
+    font-weight: 900;
+    box-shadow: 0 15px 20px -8px hsl(245 75% 52% / 0.4);
+}
+
+.content .body .boton:hover
+{
+    cursor: pointer;
+}
+
+.content .body .cancel
+{
+    margin: 3rem 0 0 0;
+}
+
+.content .body .cancel:hover
+{
+    cursor: pointer;
+}
